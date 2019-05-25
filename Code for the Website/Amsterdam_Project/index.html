@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Totem</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="totem.js"></script>
+  <script type="text/javascript" src="TimTurkTools.js"></script>
+  <!--<script src="min.js"></script>-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="trialNum"></div>
+    <!--
+        Amazon turk url    https://www.mturk.com/mturk/externalSubmit
+	    Amazon sandbox url -->
+    <form id="turkSubmit" action="https://workersandbox.mturk.com/mturk/externalSubmit" method="post" autocomplete="off">
+      <input type="hidden" name="experimentName" id="experimentName" value="Totem">
+      <input type="hidden" name="assignmentId" id="assignmentId" value="">
+      <input type="hidden" name="experimentType" id="experimentType" value="">
+      <input type="hidden" name="correctRate" id="correctRate" value="">
+      <input type="hidden" name="dataCSV" id="dataCSV" value="">
+      <input type="submit" name="hiddenSubmit" id="hiddenSubmit" value="Submit" style="display: none">
+      <div id="questions">
+        <table>
+          <tr>
+            <td><label for="age">Enter your Age:</label></td>
+            <td><input type="text" name="age" id="age" value=""></td>
+          </tr>
+          <tr>
+            <td>Gender:</td>
+            <td>
+              <input type="radio" name="gender" id="male" value="male">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="female" value="female">
+              <label for="female">Female</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Handedness:</td>
+            <td>
+              <input type="radio" name="handedness" id="leftHanded" value="left">
+              <label for="leftHanded">Left-handed</label>
+              <input type="radio" name="handedness" id="rightHanded" value="right">
+              <label for="rightHanded">Right-handed</label>
+            </td>
+          </tr>
+        </table>
+        <kbd id="formContinue" class="button noselect">Continue</kbd>
+      </div>
+      <div id="done">
+        <p>Done! Thanks for your time and efforts.<br><br>Any comments for us?</p>
+        <textarea name="comments" id="comments" rows="15" cols="50"></textarea>
+        <br><br><br><a id="submitButton" href="#">Submit</a>
+      </div>
+    </form>
+    <div id="wait"></div>
+    <img id="totem" src="" alt="Totem" align="middle">
+    <div id="targetBox">+<div id="exclamationMark">!</div></div>
+    <div id="buttons">
+      <kbd id="button1" class="button noselect"></kbd>
+      <kbd id="button2" class="button noselect"></kbd>
+    </div>
+    <p id="startExp">Press <kbd class="button noselect">M</kbd> for next slide</p>
+    <img id="instructions" src="" align="middle">
+  </body>
+</html>
