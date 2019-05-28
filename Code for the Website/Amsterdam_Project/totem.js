@@ -15,7 +15,7 @@ var expType,
     data = {},
 
     SDButtonsText,
-    picPath = 'medhuman1.tmu.edu.tw/philip/Amsterdam_Project/',
+    picPath = 'https://ankiitgupta7.github.io/My-Website/',
     wait = [500, 250, 700, 100, 950, 500, 1750, 1000],
     totemNum = 60,
 // Big arrow   -L: 10 -R: 10
