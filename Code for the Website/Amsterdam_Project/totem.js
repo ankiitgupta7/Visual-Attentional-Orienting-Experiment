@@ -15,7 +15,7 @@ var expType,
     data = {},
 
     SDButtonsText,
-    picPath = 'https://ankiitgupta7.github.io/My-Website/',
+    picPath = 'https://ankiitgupta7.github.io/Web-Experiments/FedEx%20Task/',
     wait = [500, 250, 700, 100, 950, 500, 1750, 1000],
     totemNum = 60,
 // Big arrow   -L: 10 -R: 10
